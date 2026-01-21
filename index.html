@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personal Porfolio website-Thapa</title>
+    <meta name="description" content="I'm Sanjaya Thapa" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Quicksand:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="css/globals.css" />
+    <link rel="stylesheet" href="css/hero.css" />
+    <link rel="stylesheet" href="css/common.css" />
+    <link rel="stylesheet" href="css/about.css" />
+    <link rel="stylesheet" href="css/skill.css" />
+    <link rel="stylesheet" href="css/sidebar.css" />
+    <link rel="stylesheet" href="css/work-count.css" />
+    <link rel="stylesheet" href="css/contact.css" />
+
+
+
+  </head>
+  <body>
+    <nav class="sidebar">
+      <i id="hamburger" class="fa-solid fa-bars sidebar_hamburger"></i>
+
+      <div class="sidebar_content">
+        <img class="sidebar_image" src="images/photo.jpg" alt="Profile Image" />
+        <h1 class="sidebar__name">Sanjay Thapa</h1>
+        <h2 class="sidebar__job">
+          Computer Engineering Student <span>in Nepal</span>
+        </h2>
+        <ul class="sidebar__list">
+          <li>
+            <a href="#hero">Home</a>
+          </li>
+          <li>
+            <a href="#skill">Skill</a>
+          </li>
+          <li>
+            <a href="#about">About Me</a>
+          </li>
+          <li>
+            <a href="#contact">Contact</a>
+          </li>
+        </ul>
+        <p class="sidebar__copyright">
+          &copy; 2026 All rights reserved | Made with &#10084; by
+          <span>Sanjay</span>
+        </p>
+      </div>
+    </nav>
+  
+    <section id="hero">
+      <h1>Hi! <br />I'm Sanjay <br /></h1>
+      <div class="text-changer">
+        <h2 class="intro-text">I am a</h2>
+        <div class="roles-container">
+          <span class="role">Web Developer</span>
+          <span class="role">Programmer</span>
+          <span class="role">Freelancer</span>
+          <span class="role">Designer</span>
+          <span class="role">Web Developer</span>
+        </div>
+      </div>
+
+      <p>
+        I enjoy learning new skills through <br />
+        hands-on work and projects
+      </p>
+
+      <a href="mailto:sanjay3484043@gmail.com">
+        Contact me <i class="fa-regular fa-envelope"></i>
+      </a>
+    </section>
+    <section id="about" class="section">
+     <p class="section_title">About ME</p>
+      <p class="section_subtitle">Who am I?</p>
+      <p class="about_description">
+        <strong>Hi, I am Sanjay.</strong> <br />an engineering student who enjoys learning new technologies and building simple, useful projects. I like turning ideas into clean and practical solutions, and I’m always working on improving my coding and problem-solving skills.
+      </p> 
+
+      <div class="about_skills">
+        <div class="about_skills_box">
+          <i class="fa-solid fa-ear-listen"></i>
+          <h3>Graphic design</h3>
+        </div>
+
+        <div class="about_skills_box">
+          <i class="fa-solid fa-globe"></i>
+          <h3>Web design</h3>
+        </div>
+
+        <div class="about_skills_box">
+          <i class="fa-solid fa-database"></i>
+          <h3>Software</h3>
+        </div>
+
+        <div class="about_skills_box">
+          <i class="fa-solid fa-mobile-screen-button"></i>
+          <h3>Application</h3>
+        </div>
+      </div>
+    </section>
+
+    <section id="work__count">
+      <span>10</span>
+      <span>cups of coffee</span>
+      <span>7</span>
+      <span>projects</span>
+      <span>4</span>
+      <span>clients</span>
+      <span>3</span>
+      <span>partners</span>
+    </section>
+
+    <section id="skill" class="section">
+      <p class="section_title">My Speciality</p>
+      <p class="section_subtitle">My Skills</p>
+      <div class="all-skills">
+        <div class="skill">
+          <p>HTML5</p>
+          <div class="skill_bg_box">
+            <div class="skill_percent_box">
+              <span class="percentage_text">80%</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="skill">
+          <p>CSS3</p>
+          <div class="skill_bg_box">
+            <div class="skill_percent_box" style="width:70%; color:red;background-color:red">
+              <span>70%</span>
+            </div>
+          </div>
+        </div>
+          <div class="skill">
+          <p>JS</p>
+          <div class="skill_bg_box">
+            <div class="skill_percent_box" style="width:60%; color:green;background-color:green">
+              <span>60%</span>
+            </div>
+          </div>
+        </div>
+        <div class="skill">
+          <p>Python</p>
+          <div class="skill_bg_box">
+            <div class="skill_percent_box" style="width:50%; color:rgb(3, 167, 153);background-color:rgb(3, 167, 153)">
+              <span>50%</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </section>
+    <section id="contact" class="section">
+      <p class="section_title">Get In Touch</p>
+      <p class="section_subtitle">Contact</p>
+
+      <form
+        action=""
+        id="contactForm"
+        class="contact__form"
+        onsubmit="submitForm(event)"
+      >
+        <input
+          type="text"
+          placeholder="Name"
+          id="name"
+          name="name"
+          class="contact__input"
+        />
+        <br /><br />
+        <textarea
+          name="message"
+          id="message"
+          class="contact__textarea"
+          placeholder="Message"
+          rows="4"
+        ></textarea>
+        <button class="contact__button" type="submit">Send Message</button>
+      </form>
+    </section>
+
+    <script>
+      const hamburger = document.querySelector("#hamburger");
+      const sidebar = document.querySelector(".sidebar_content");
+
+      hamburger.addEventListener("click", () => {
+        hamburger.classList.toggle("sidebar_hamburger_translate");
+        sidebar.classList.toggle("active");
+      });
+    </script>
+  </body>
+</html>

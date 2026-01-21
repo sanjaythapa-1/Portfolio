@@ -1,0 +1,32 @@
+* {
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #0f172a;
+  /* background-color: #0b1220; */
+
+  color: white;
+  font-family: "Quicksand", sans-serif;
+  margin: unset;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+p {
+  all: unset;
+  display: block;
+}
+
+ul,
+li {
+  all: unset;
+}

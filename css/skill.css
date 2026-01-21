@@ -1,0 +1,33 @@
+.skill {
+  margin-bottom: 20px;
+}
+.skill > p {
+  margin-bottom: 10px;
+}
+.skill_bg_box {
+  background-color: #f2f3f7;
+  border-radius: 8px;
+}
+.skill_percent_box {
+  height: 6px;
+  background: #2c98f0;
+  width: 80%;
+  border-radius: 6px;
+  color: #2c98f0;
+  position: relative;
+}
+.skill_percent_box > span {
+  position: absolute;
+  top: -22px;
+  right: 0;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 1.2;
+}
+@media screen and (min-width: 768px) {
+  .skill_box {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+}
